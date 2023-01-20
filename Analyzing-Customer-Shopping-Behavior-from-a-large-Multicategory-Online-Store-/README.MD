@@ -88,7 +88,7 @@ Pyspark was used to clean and transform the data. This was done using __AWS Glue
 * The column category_code was splitted into three columns as it consisted of the product category, their subcategory and special category in one column itself. We splitted them with columns namely category_1, category_2 and category_3. The delimiter ‘.’ was used to split the category_code column.
 More details can be found in this [Pyspark Script.](https://github.com/iqrabismii/Big-Data-Projects-/blob/main/Analyzing-Customer-Shopping-Behavior-from-a-large-Multicategory-Online-Store-/CleaningAndTransforming.py)
 
-## Connecting to Tableau
+## Connecting AWS to Tableau
 
 Tableau desktop was used to make connections with Athena for creating dashboards. Tableau Desktop was connected to AWS Athena by inserting the Server, Port, and the S3 Staging Directory (The S3 URL where the queried data is stored) along with the Access Key ID of our user which can be seen in Figure below
 
@@ -98,6 +98,27 @@ Tableau desktop was used to make connections with Athena for creating dashboards
 
 
 ## Insights
+Once, the connection is successful, a subset of data was extracted (around 1 million records) as shown below.
+
+
+
+![Screenshot 2023-01-20 at 11 12 33 AM](https://user-images.githubusercontent.com/108056063/213785801-4c7375ea-ff21-4b79-8de5-19e583a05b46.png)
+
+From the visualisation, following patterns were observed: 
+* total sales increases after first week of each month. For the month of October, the highest sales were observed on October 13th, 2019, which was Sunday. Similarly, for the month of November, the highest sales recorded (which was the overall highest sales) was on November 17th which was also third Sunday.  Overall sales for November were higher. One of the reasons could be the approach of Thanksgiving which falls on the last week of November
+* bubble chart shows the most sold products on the e- commerce website. Electronics tops the rank with around 8248 items sold. The second top sold category is  appliances (1538 items), computers.
+* from electronics category, smartphones are the most purchased items by customers which is followed by audio and video related items. It was observed that camera is the least purchased product for this e-commerce website.
+* Samsung is the most popular brand  followed by Apple and Xiaomi. 
+* The donut chart shows the percentage of people viewing the products on e-commerce website is the largest (94.94%). The percentage of people adding these items into their cart is around 3.58 % whereas only 1.49% of the total people will purchase the products.
+* Acitivity shows an increasing trend till 8 am and then a slight dip is observed at around 12 pm. 
+
+Once the dashboard is ready in Tableau Public and  the embed code was copied as shown below and uploaded to S3 bucket for hosting it as a static website for public access.
+![Screenshot 2023-01-20 at 11 19 35 AM](https://user-images.githubusercontent.com/108056063/213787002-228ba72a-1b13-4dc6-9453-6e6434fea4ce.png)
+
+Link for static website is provided [here.](https://shoppingdashboard.s3.us-west-1.amazonaws.com/index.html)
+
+
+
 
 
 
