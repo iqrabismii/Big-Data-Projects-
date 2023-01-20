@@ -113,7 +113,9 @@ From the visualisation, following patterns were observed:
 * Acitivity shows an increasing trend till 8 am and then a slight dip is observed at around 12 pm. 
 
 Once the dashboard is ready in Tableau Public and  the embed code was copied as shown below and uploaded to S3 bucket for hosting it as a static website for public access.
+
 ![Screenshot 2023-01-20 at 11 19 35 AM](https://user-images.githubusercontent.com/108056063/213787002-228ba72a-1b13-4dc6-9453-6e6434fea4ce.png)
+
 
 Link for static website is provided [here.](https://shoppingdashboard.s3.us-west-1.amazonaws.com/index.html)
 
