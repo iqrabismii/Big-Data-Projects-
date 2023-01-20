@@ -117,7 +117,7 @@ Once the dashboard is ready in Tableau Public and  the embed code was copied as 
 ![Screenshot 2023-01-20 at 11 19 35 AM](https://user-images.githubusercontent.com/108056063/213787002-228ba72a-1b13-4dc6-9453-6e6434fea4ce.png)
 
 
-Link for static website is provided [here.](https://shoppingdashboard.s3.us-west-1.amazonaws.com/index.html)
+Link for static website is provided [here.](file:///Users/iqrabismi/Desktop/SJSU%20DATA%20ANALYTICS/semester%202/big%20data/DATA228_Project_Submission%20Files/index.html)
 
 
 
