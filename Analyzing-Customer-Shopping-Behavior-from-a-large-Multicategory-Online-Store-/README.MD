@@ -82,6 +82,29 @@ For this project, following AWS Services were leverages:
 
 ## Data Transformation using Pyspark Script
 
+Pyspark was used to clean and transform the data. This was done using __AWS Glue__. Exploratory Data Analysis and Extract Load Transform (ELT) was performed on the dataset which included removing duplicate data, handling missing values, changing the datatype to correct format, etc. After a thorough analysis, following cleaning and transformation was done on the dataset:
+* All the columns were modified with appropriate datatypes.
+* The column event_time was originally of the string datatype and consisted of ‘UTC’ along with the timestamp. Thus,the ‘UTC’ was removed and event_time was changed to timestamp datatype.
+* The column category_code was splitted into three columns as it consisted of the product category, their subcategory and special category in one column itself. We splitted them with columns namely category_1, category_2 and category_3. The delimiter ‘.’ was used to split the category_code column.
+More details can be found in this [Pyspark Script.](https://github.com/iqrabismii/Big-Data-Projects-/blob/main/Analyzing-Customer-Shopping-Behavior-from-a-large-Multicategory-Online-Store-/CleaningAndTransforming.py)
+
+## Connecting to Tableau
+
+Tableau desktop was used to make connections with Athena for creating dashboards. Tableau Desktop was connected to AWS Athena by inserting the Server, Port, and the S3 Staging Directory (The S3 URL where the queried data is stored) along with the Access Key ID of our user which can be seen in Figure below
+
+
+![Screenshot 2023-01-20 at 2 17 16 AM](https://user-images.githubusercontent.com/108056063/213671434-4bb47cdc-eb69-4fa9-a051-512db99d25a6.png)
+
+
+
+## Insights
+
+
+
+
+
+
+
 
 
 
