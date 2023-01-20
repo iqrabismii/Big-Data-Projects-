@@ -72,7 +72,7 @@ Lastly, a __static website__ was published by loading an embed for dashboard in 
 
 ## Tools Used
 
-For this project, following AWS Services were leverages: 
+For this project, following __AWS__ Services were leveraged: 
 * [AWS S3](https://aws.amazon.com/s3/)
 * [AWS GLUE](https://aws.amazon.com/glue/)
 * [ATHENA](https://aws.amazon.com/athena/)
